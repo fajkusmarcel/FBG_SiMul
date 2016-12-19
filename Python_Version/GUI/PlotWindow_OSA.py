@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'GUI\PlotWindow_OSA.ui'
 #
-# Created: Sun Dec 20 14:46:00 2015
-#      by: PyQt4 UI code generator 4.9.6
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 

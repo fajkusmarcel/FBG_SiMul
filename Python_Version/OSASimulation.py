@@ -155,10 +155,11 @@ class OSASimulation(object):
         self.MinBandWidth=MinBandWidth
         self.MaxBandWidth=MaxBandWidth
         self.SimulationResolution=SimulationResolution
-        #Array with the FBG period
+        
+        #Array with the Original FBG period
         self.APFBG=[]
         for i in np.arange(0,self.NumberFBG):
-            self.APFBG.append(self.FBGOriginalWavel[i]/(2.0*self.InitialRefractiveIndex))
+            self.APFBG.append(self.FBGOriginalWavel[i]*(1-self.MeanChangeRefractiveIndex/self.InitialRefractiveIndex)/(2.0*self.InitialRefractiveIndex))
             
         #Empty Original Reflec spectrum
         self.OReflect={}
@@ -170,7 +171,7 @@ class OSASimulation(object):
             # Wavelength cycle (Here the simulation resolution is used)
             for l in np.arange(self.MinBandWidth,self.MaxBandWidth,self.SimulationResolution):
                 f1 = np.matrix('1 0; 0 1') #empty transfer matrix
-                M=5.0 #Sections the gratting is divided-- Transfer Matrix
+                M=20.0 #Sections the gratting is divided-- Transfer Matrix
                 #FBG increment size (nm)
                 deltz=(self.FBGLength*(10.0**6))/M
                 for z in np.arange(0,M):

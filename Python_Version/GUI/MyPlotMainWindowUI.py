@@ -2,8 +2,7 @@
 
 # Form implementation generated from reading ui file 'GUI\MyPlotMainWindowUI.ui'
 #
-# Created: Fri Jan 15 09:32:07 2016
-#      by: PyQt4 UI code generator 4.9.6
+# Created by: PyQt4 UI code generator 4.11.4
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -1238,6 +1237,14 @@ class Ui_MainWindow(object):
         self.gridLayout_26.addWidget(self.pushButton_SaveasFileOSA, 0, 5, 1, 1)
         self.gridLayout_37.addLayout(self.gridLayout_26, 0, 0, 1, 1)
         self.gridLayout_23.addWidget(self.groupBox_8, 4, 0, 1, 4)
+        self.groupBox_7.raise_()
+        self.groupBox_12.raise_()
+        self.groupBox_6.raise_()
+        self.label_27.raise_()
+        self.label_28.raise_()
+        self.pushButton_HelpFBGSpectrumSimulation.raise_()
+        self.groupBox_9.raise_()
+        self.groupBox_8.raise_()
         self.tabWidget.addTab(self.Simulation, _fromUtf8(""))
         self.widget = QtGui.QWidget()
         self.widget.setObjectName(_fromUtf8("widget"))
